@@ -1,0 +1,145 @@
+*
+    font-family: 'Microsoft JhengHei',serif
+
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6
+    font-weight: bold    
+    
+// 顏色變數
+$headerBgColor: #424242
+$mainColor: #FFD366
+$contetColor: #eee
+$perfectColor: #86D73F
+$skinnyColor: #31BAF9
+$fatColor: #FF982D
+$obeseColor: #FF6C03
+$overweightColor: #FF1200
+
+// 基本樣式mixin
+@mixin size($w,$h:$w)
+    width: $w
+    height: $h
+
+.header
+    .jumbotron
+        background-color: $headerBgColor
+        form
+            color: $mainColor
+            .form-control
+                background-color: rgba(255,255,255,0.18)
+                color: rgba(255,255,255,0.5)
+        .answerBtn
+            color: $headerBgColor
+            background-color: $mainColor
+            +size(120px)
+            font-weight: 600
+            transition: 0.2s
+            cursor: pointer
+            &:hover
+                box-shadow: 0px 0px 10px 5px rgba($mainColor,0.5)
+            &:active
+                background: #DEA821
+                box-shadow: none
+        .answerBtn.showValue
+            background-color: transparent
+            position: relative
+            font-size: 30px
+            &:after
+                content: 'BMI'
+                position: absolute
+                left: 0
+                right: 0
+                top: 60%
+                font-size: 10px
+            &:before
+                content: ''
+                background-image: url(../images/icons_loop.png)
+                background-repeat: no-repeat
+                background-position: center center
+                border-radius: 50%
+                display: block
+                position: absolute
+                right: 1%
+                bottom: 8%
+                +size(20px)
+        .answerBtn.showValue.perfectBtn
+            color: $perfectColor
+            border: 3px solid $perfectColor !important
+            &:before
+                background-color: $perfectColor
+                background-color: $perfectColor
+        .answerBtn.showValue.skinnyBtn
+            color: $skinnyColor
+            border: 3px solid $skinnyColor !important
+            &:before
+                background-color: $skinnyColor
+                background-color: $skinnyColor
+        .answerBtn.showValue.fatBtn
+            color: $fatColor
+            border: 3px solid $fatColor !important
+            &:before
+                background-color: $fatColor
+                background-color: $fatColor
+        .answerBtn.showValue.obeseBtn
+            color: $obeseColor
+            border: 3px solid $obeseColor !important
+            &:before
+                background-color: $obeseColor
+                background-color: $obeseColor
+        .answerBtn.showValue.overweightBtn
+            color: $overweightColor
+            border: 3px solid $overweightColor !important
+            &:before
+                background-color: $overweightColor
+                background-color: $overweightColor
+        .answerBtn.showValue.middleBtn
+            color: $obeseColor
+            border: 3px solid $obeseColor !important
+            &:before
+                background-color: $obeseColor
+                background-color: $obeseColor
+
+
+
+.content
+    .perfect:before
+        background: $perfectColor
+    .skinny:before
+        background: $skinnyColor
+    .fat:before
+        background: $fatColor
+    .obese:before
+        background: $obeseColor
+    .middleFat:before
+        background: $obeseColor
+    .overweight:before
+        background: $overweightColor
+    ul
+        width: 624px
+        box-sizing: border-box
+        &:before
+            content: ""
+            display: block
+            +size(5px,62px)
+            position: relative
+            left: -3%
+        li
+            font-size: 20px
+            font-weight: 600
+            &:nth-child(1)
+                width: 100px
+            span
+                display: inline-block
+                font-size: 12px
+                margin-right: 5px
+                transform: translateY(-15%)
+                font-weight: 400
+
+.footer
+    .jumbotron
+        .smallLogo
+            +size(55px)
+            background-image: url(../images/BMICLogo-dark.png)
+            background-size: cover
+  
+            
+    
