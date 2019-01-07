@@ -3,6 +3,12 @@
 // 任務三:從localStorage裡抓取set進去的資料，渲染到頁面
 // 任務四:每次登入頁面都先從localStorage抓取資料，並渲染到顯示區
 
+"use strict";
+
+// DOM set
+var heightNum = document.querySelector('.height');
+var weigthNum = document.querySelector('.weight');
+
 var showData = document.querySelector('.showData');
 var arrayData = [];
 // 取出locatStorage的值
@@ -86,18 +92,17 @@ getLocal();
 
 
 // 取得身高及體重的值
-
 function getData() {
-    var height = parseInt(document.querySelector('.height').value);
-    var weight = parseInt(document.querySelector('.weight').value);
-    var nowDate = new Date();
-    var data = {
+    let height = parseInt(heightNum.value);
+    let weight = parseInt(weigthNum.value);
+    let nowDate = new Date();
+    let data = {
         heightData: height,
         weightData: weight,
         date: nowDate.getMonth() + 1 + '-' + nowDate.getDate() + '-' + nowDate.getFullYear()
     };
     arrayData.push(data);
-    var inputData = JSON.stringify(arrayData);
+    let inputData = JSON.stringify(arrayData);
     setData(inputData);
     getLocal();
     changeBtn(height,weight);
@@ -128,6 +133,11 @@ function changeBtn(h,w) {
     } else {
         return;
     }
+
+    setTimeout(function() {
+        answerBtn.className = 'answerBtn border-0 rounded-circle';
+        answerBtn.textContent = '看結果';
+    },5000)
 }
 
 // 綁定事件監聽

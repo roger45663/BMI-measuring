@@ -16,21 +16,25 @@
     <div class="header">
         <div class="jumbotron mb-0 rounded-0">
             <div class="container d-flex justify-content-center align-items-center">
-                <img src="images/BMICLogo.png" alt="logo">
-                <form action="index.html" method="get" class="mx-5">
-                    身高 cm
-                    <input type="text" class="form-control border-warning height" placeholder="請輸入身高" aria-label="請輸入身高" aria-describedby="basic-addon2">
-                    <br>
-                    體重 kg
-                    <input type="text" class="form-control border-warning weight" placeholder="請輸入體重" aria-label="請輸入體重" aria-describedby="basic-addon2">
-                </form>
-                <button type="submit" class="answerBtn border-0 rounded-circle">看結果</button>
+                <img class="logo" src="images/BMICLogo.png" alt="logo">
+                <div class="inputData d-flex justify-content-center align-items-center">
+                    <form action="index.html" method="get" class="mx-5">
+                        身高 cm
+                        <input type="text" class="form-control border-warning height" placeholder="請輸入身高" aria-label="請輸入身高"
+                            aria-describedby="basic-addon2">
+                        <br>
+                        體重 kg
+                        <input type="text" class="form-control border-warning weight" placeholder="請輸入體重" aria-label="請輸入體重"
+                            aria-describedby="basic-addon2">
+                    </form>
+                    <button type="submit" class="answerBtn border-0 rounded-circle">看結果</button>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="content bg-light pt-4 pb-5">
-        <div class="container">
+        <div class="container mx-auto">
             <h4 class="text-center py-3">BMI 紀錄</h4>
             <div class="showData">
                 <!-- <div class="data">
@@ -91,18 +95,12 @@
         </div>
     </div>
 
-    <div class="footer">
-        <div class="jumbotron text-center mb-0 rounded-0" style="background-color: #FFD366">
+    <div class="footer mt-auto">
+        <div class="jumbotron text-center mb-0 rounded-0 py-4" style="background-color: #FFD366">
             <div class="smallLogo mx-auto"></div>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
     <script src="js/all.js"></script>
 </body>
 

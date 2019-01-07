@@ -1,164 +1,107 @@
 * {
   font-family: 'Microsoft JhengHei',serif;
-}
+  box-sizing: border-box; }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 .header .jumbotron {
-  background-color: #424242;
-}
-
-.header .jumbotron form {
-  color: #FFD366;
-}
-
-.header .jumbotron form .form-control {
-  background-color: rgba(255, 255, 255, 0.18);
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.header .jumbotron .answerBtn {
-  color: #424242;
-  background-color: #FFD366;
-  width: 120px;
-  height: 120px;
-  font-weight: 600;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-.header .jumbotron .answerBtn:hover {
-  -webkit-box-shadow: 0px 0px 10px 5px rgba(255, 211, 102, 0.5);
-          box-shadow: 0px 0px 10px 5px rgba(255, 211, 102, 0.5);
-}
-
-.header .jumbotron .answerBtn:active {
-  background: #DEA821;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.header .jumbotron .answerBtn.showValue {
-  background-color: transparent;
-  position: relative;
-  font-size: 30px;
-}
-
-.header .jumbotron .answerBtn.showValue:after {
-  content: 'BMI';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  font-size: 10px;
-}
-
-.header .jumbotron .answerBtn.showValue:before {
-  content: '';
-  background-image: url(../images/icons_loop.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-radius: 50%;
-  display: block;
-  position: absolute;
-  right: 1%;
-  bottom: 8%;
-  width: 20px;
-  height: 20px;
-}
-
-.header .jumbotron .answerBtn.showValue.perfectBtn {
-  color: #86D73F;
-  border: 3px solid #86D73F !important;
-}
-
-.header .jumbotron .answerBtn.showValue.perfectBtn:before {
-  background-color: #86D73F;
-  background-color: #86D73F;
-}
-
-.header .jumbotron .answerBtn.showValue.skinnyBtn {
-  color: #31BAF9;
-  border: 3px solid #31BAF9 !important;
-}
-
-.header .jumbotron .answerBtn.showValue.skinnyBtn:before {
-  background-color: #31BAF9;
-  background-color: #31BAF9;
-}
-
-.header .jumbotron .answerBtn.showValue.fatBtn {
-  color: #FF982D;
-  border: 3px solid #FF982D !important;
-}
-
-.header .jumbotron .answerBtn.showValue.fatBtn:before {
-  background-color: #FF982D;
-  background-color: #FF982D;
-}
-
-.header .jumbotron .answerBtn.showValue.obeseBtn {
-  color: #FF6C03;
-  border: 3px solid #FF6C03 !important;
-}
-
-.header .jumbotron .answerBtn.showValue.obeseBtn:before {
-  background-color: #FF6C03;
-  background-color: #FF6C03;
-}
-
-.header .jumbotron .answerBtn.showValue.overweightBtn {
-  color: #FF1200;
-  border: 3px solid #FF1200 !important;
-}
-
-.header .jumbotron .answerBtn.showValue.overweightBtn:before {
-  background-color: #FF1200;
-  background-color: #FF1200;
-}
-
-.header .jumbotron .answerBtn.showValue.middleBtn {
-  color: #FF6C03;
-  border: 3px solid #FF6C03 !important;
-}
-
-.header .jumbotron .answerBtn.showValue.middleBtn:before {
-  background-color: #FF6C03;
-  background-color: #FF6C03;
-}
+  background-color: #424242; }
+  .header .jumbotron form {
+    color: #FFD366; }
+    .header .jumbotron form .form-control {
+      background-color: rgba(255, 255, 255, 0.18);
+      color: rgba(255, 255, 255, 0.5); }
+  .header .jumbotron .answerBtn {
+    color: #424242;
+    background-color: #FFD366;
+    width: 120px;
+    height: 120px;
+    font-weight: 600;
+    transition: 0.2s;
+    cursor: pointer; }
+    .header .jumbotron .answerBtn:hover {
+      box-shadow: 0px 0px 10px 5px rgba(255, 211, 102, 0.5); }
+    .header .jumbotron .answerBtn:active {
+      background: #DEA821;
+      box-shadow: none; }
+  .header .jumbotron .answerBtn.showValue {
+    background-color: transparent;
+    position: relative;
+    font-size: 30px; }
+    .header .jumbotron .answerBtn.showValue:after {
+      content: 'BMI';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 60%;
+      font-size: 10px; }
+    .header .jumbotron .answerBtn.showValue:before {
+      content: '';
+      background-image: url(../images/icons_loop.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 50%;
+      display: block;
+      position: absolute;
+      right: 1%;
+      bottom: 8%;
+      width: 20px;
+      height: 20px; }
+  .header .jumbotron .answerBtn.showValue.perfectBtn {
+    color: #86D73F;
+    border: 3px solid #86D73F !important; }
+    .header .jumbotron .answerBtn.showValue.perfectBtn:before {
+      background-color: #86D73F;
+      background-color: #86D73F; }
+  .header .jumbotron .answerBtn.showValue.skinnyBtn {
+    color: #31BAF9;
+    border: 3px solid #31BAF9 !important; }
+    .header .jumbotron .answerBtn.showValue.skinnyBtn:before {
+      background-color: #31BAF9;
+      background-color: #31BAF9; }
+  .header .jumbotron .answerBtn.showValue.fatBtn {
+    color: #FF982D;
+    border: 3px solid #FF982D !important; }
+    .header .jumbotron .answerBtn.showValue.fatBtn:before {
+      background-color: #FF982D;
+      background-color: #FF982D; }
+  .header .jumbotron .answerBtn.showValue.obeseBtn {
+    color: #FF6C03;
+    border: 3px solid #FF6C03 !important; }
+    .header .jumbotron .answerBtn.showValue.obeseBtn:before {
+      background-color: #FF6C03;
+      background-color: #FF6C03; }
+  .header .jumbotron .answerBtn.showValue.overweightBtn {
+    color: #FF1200;
+    border: 3px solid #FF1200 !important; }
+    .header .jumbotron .answerBtn.showValue.overweightBtn:before {
+      background-color: #FF1200;
+      background-color: #FF1200; }
+  .header .jumbotron .answerBtn.showValue.middleBtn {
+    color: #FF6C03;
+    border: 3px solid #FF6C03 !important; }
+    .header .jumbotron .answerBtn.showValue.middleBtn:before {
+      background-color: #FF6C03;
+      background-color: #FF6C03; }
 
 .content .perfect:before {
-  background: #86D73F;
-}
+  background: #86D73F; }
 
 .content .skinny:before {
-  background: #31BAF9;
-}
+  background: #31BAF9; }
 
 .content .fat:before {
-  background: #FF982D;
-}
+  background: #FF982D; }
 
 .content .obese:before {
-  background: #FF6C03;
-}
+  background: #FF6C03; }
 
 .content .middleFat:before {
-  background: #FF6C03;
-}
+  background: #FF6C03; }
 
 .content .overweight:before {
-  background: #FF1200;
-}
-
-.content ul {
-  width: 624px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  background: #FF1200; }
 
 .content ul:before {
   content: "";
@@ -166,31 +109,46 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   width: 5px;
   height: 62px;
   position: relative;
-  left: -3%;
-}
+  left: -3%; }
 
 .content ul li {
   font-size: 20px;
-  font-weight: 600;
-}
-
-.content ul li:nth-child(1) {
-  width: 100px;
-}
-
-.content ul li span {
-  display: inline-block;
-  font-size: 12px;
-  margin-right: 5px;
-  -webkit-transform: translateY(-15%);
-          transform: translateY(-15%);
-  font-weight: 400;
-}
+  font-weight: 600; }
+  .content ul li span {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+    transform: translateY(-15%);
+    font-weight: 400; }
 
 .footer .jumbotron .smallLogo {
   width: 55px;
   height: 55px;
   background-image: url(../images/BMICLogo-dark.png);
-  background-size: cover;
-}
-/*# sourceMappingURL=style.css.map */
+  background-size: cover; }
+
+@media screen and (max-width: 768px) {
+  .header .jumbotron .container {
+    flex-direction: column; }
+    .header .jumbotron .container .logo {
+      margin-bottom: 1.5rem;
+      width: 80px;
+      height: 80px; }
+    .header .jumbotron .container .answerBtn {
+      width: 100px;
+      height: 100px; } }
+
+@media screen and (max-width: 450px) {
+  .header .jumbotron .container .logo {
+    width: 60px;
+    height: 60px; }
+  .header .jumbotron .container .inputData {
+    flex-direction: column; }
+    .header .jumbotron .container .inputData .answerBtn {
+      margin-top: 1rem; }
+  .content .container .data li {
+    font-size: 1rem; }
+    .content .container .data li:nth-child(1) {
+      display: none; }
+    .content .container .data li span {
+      font-size: 0.5rem; } }
